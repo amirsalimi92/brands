@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: beige;
+}
+
+div {
+  display: block;
+}
+
+div > main {
+  display: flex;
+  margin: 0;
+}
+
+main > p:first-child {
+  display: flex;
+  font-size: 50px;
+  background-color: azure;
+  color: azure;
+}
+
+p {
+  margin: 0;
+}
+
+main > p:nth-child(2) {
+  display: flex;
+  font-size: 50px;
+  background-color: red;
+  color: red;
+}
+
+div::before {
+  display: flex;
+  content: "T \00a0\00a0\00a0\00a0\00a0 O \00a0\00a0\00a0\00a0\00a0\00a0 M \00a0\00a0\00a0\00a0\00a0M \00a0\00a0\00a0\00a0\00a0 Y";
+  background-color: darkblue;
+  color: azure;
+  justify-content: center;
+}
+
+div::after {
+  display: flex;
+  content: "J \00a0\00a0\00a0\00a0\00a0 E \00a0\00a0\00a0\00a0\00a0 A \00a0\00a0\00a0\00a0\00a0 N \00a0\00a0\00a0\00a0\00a0 S";
+  background-color: darkblue;
+  color: azure;
+  justify-content: center;
+}
